@@ -10,7 +10,7 @@ db_config = {
 }
 
 # 엑셀 파일 읽기
-excel_file = 'your_excel_file.xlsx'
+excel_file = '.xlsx'
 df = pd.read_excel(excel_file)
 
 

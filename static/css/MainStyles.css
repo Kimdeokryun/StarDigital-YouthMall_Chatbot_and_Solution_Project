@@ -1,0 +1,83 @@
+/* 헤더 전체 영역 */
+header {
+  width: 100%;
+  height: 80px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 상단로고 영역 */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 100px;
+  height: 100px;
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 카테고리영역 */
+.menu-container {
+  justify-content: space-between;
+  padding-right: 200px;
+}
+
+.menu-container a {
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+/* 섹션 전체 영역 */
+.section-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 홈페이지문구영역 */
+.content {
+  padding-left: 170px;
+}
+
+.content h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 0px;
+  padding-top: 100px;
+  padding-bottom: 55px;
+}
+
+.content p {
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 55px;
+  padding-bottom: 100px;
+}
+
+/* 홈페이지 로고 영역 */
+.logo {
+  margin: 0px;
+}
+
+.logo img {
+  width: 550px;
+  height: 550px;
+  background-size: cover;
+  padding: 70px 170px 0px 50px;
+}

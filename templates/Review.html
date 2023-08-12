@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ReviewStyles.css') }}" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
+  <title>드림하이 - 리뷰 분석</title>
+</head>
+
+<body>
+  <div class="header-container">
+    <div class="logo-container">
+      <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="로고" />
+      </a>
+      <a href="{{ url_for('index') }}">드림하이</a>
+    </div>
+    <div class="menu-container">
+      <a href="{{ url_for('chat') }}">천안 청년몰 챗봇</a>
+      <a href="{{ url_for('review') }}" style="font-weight: bold;">리뷰 분석</a>
+    </div>
+  </div>
+  <div class="review-container">
+    <div class="word">
+      <img src="{{ url_for('static', filename='images/positive.png') }}" alt="긍정 리뷰 워드 클라우드" />
+      <img src="{{ url_for('static', filename='images/negative.png') }}" alt="부정 리뷰 워드 클라우드" />
+      <p>
+        <font size = "5"><strong>리뷰 워드 클라우드</strong></font><br>
+        <br>
+        <font size = "4">
+          리뷰의 텍스트 데이터안에서 긍⋅부정 단어의 빈도를 시각적으로 나타냅니다.<br>
+          빈도가 높은 단어일수록 크게, 빈도가 낮은 단어일수록 작게 표현됩니다.<br>
+          따라서 도깨비매의 리뷰 데이터의 핵심 내용 및 특징을 빠르게 파악 할 수 있습니다.
+        </font>
+      </p>
+    </div>
+    <div class="visualization">
+      <img src="{{ url_for('static', filename='images/visualization.png') }}" alt="리뷰 감정 분석 결과 산점도" />
+      <p>
+        <font size = "5"><strong>리뷰 감정 분석 결과 산점도</strong></font><br>
+        <br>
+        <font size = "4">
+          x축은 리뷰 데이터의 순서대로 인덱스가 할당되어있는 것입니다.<br>
+          y축은 해당되는 리뷰가 긍정인지, 부정인지 나타내는 감정 점수입니다.<br>
+          밝은 색일수록 긍정적인 감정을, 어두운 색일수록 부정적인 감정을 나타냅니다.<br>
+          산점도 그래프의 결과로 보았을 때 산점도가 밝은 색이 많은 것으로 보아 긍정 리뷰가 많다는 것을 알 수 있습니다.
+        </font>  
+      </p>
+    </div>
+    <div class="histogram">
+      <img src="{{ url_for('static', filename='images/histogram.png') }}" alt="감정 분석 결과 분포" />
+      <p>
+        <font size = "5"><strong>감정 분석 결과 분포</strong></font><br>
+        <br>
+        <font size = "4">
+          x축은 감정분석 결과를 나타냅니다. 1에 가까울수록 긍정에 가깝고 0에 가까울수록 부정에 가깝습니다.<br>
+          y축은 감정 분석 결과 범위에 속하는 리뷰 개수를 나타냅니다.<br>
+          그래프의 결과로 보았을 때 긍정 리뷰쪽에 많이 치우쳐져있는 것으로 보아 긍정리뷰의 빈도가 더 많다고 할 수 있습니다.
+        </font>
+      </p>
+    </div>
+    <div class="ratio">
+      <img src="{{ url_for('static', filename='images/ratio.png') }}" alt="긍정/부정 리뷰 비율" />
+      <p>
+        <font size = "5"><strong>긍정/부정 리뷰 비율</strong></font><br>
+        <br>
+        <font size = "4">
+          리뷰 전체데이터의 긍/부정도의 비율을 파이차트를 통해 알 수 있습니다.<br>
+          그래프의 결과로 보았을 때 긍정리뷰가 약 92.4% 로 상당히 많다는 것을 알 수 있습니다.
+        </font>
+      </p>
+    </div>
+    <div class="item">
+      <img src="{{ url_for('static', filename='images/item.png') }}" alt="아이템별 감정 분석 결과" />
+      <p>
+        <font size = "5"><strong>아이템별 감정 분석 결과</strong></font><br>
+        <br>
+        <font size = "4">
+          아이템별 감정 분석을 실시해 상인분들의 리뷰 긍/부정도의 빈도수를 알 수 있습니다.<br>
+          대부분의 상품들이 긍정적인 리뷰를 띄고있는 것을 알 수 있습니다.
+        </font>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

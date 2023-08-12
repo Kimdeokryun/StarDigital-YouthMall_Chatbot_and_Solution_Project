@@ -10,7 +10,7 @@ db_config = {
 }
 
 # 엑셀 파일 읽기
-excel_file = '챗봇데이터.xlsx'
+excel_file = '.xlsx'
 df = pd.read_excel(excel_file, sheet_name="챗봇 답변 구성")
 
 # 데이터베이스 연결

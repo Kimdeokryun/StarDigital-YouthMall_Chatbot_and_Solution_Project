@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/MainStyles.css') }}" />
+  <title>드림하이</title>
+  <!-- <script src="app.js"></script> -->
+</head>
+<body>
+  <div class="header-container">
+    <div class="logo-container">
+      <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="로고" />
+      </a>
+      <a href="{{ url_for('index') }}">드림하이</a>
+    </div>
+    <div class="menu-container">
+        <a href="{{ url_for('chat') }}">천안 청년몰 챗봇</a>
+        <a href="{{ url_for('review') }}">리뷰 분석</a>
+    </div>
+  </div>
+  <div class="section-container">
+    <div class="content">
+      <h1>
+        AI기술을 활용한 공실 안내와 아이템 홍보
+      </h1>
+      <p>
+        드림하이는 천안 청년몰의<br>
+        공실 안내와 아이템 홍보를 위해 AI 챗봇을 도입하고<br>
+        아이템 리뷰 분석을 위한 솔루션을 제공합니다<br>
+        <br>
+      </p>
+    </div>
+    <div class="logo">
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="로고">
+    </div>
+  </div>
+</body>
+</html>

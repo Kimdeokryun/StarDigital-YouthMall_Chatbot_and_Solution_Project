@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ChatStyles.css') }}" />
+    <style>
+        .chat-container {
+            max-width: 50vw;
+            height: 80vh;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: auto;
+            margin-top: 20px;
+            /* 추가 */
+            margin-bottom: 20px;
+            /* 추가 */
+            font-family: 'Hanlim Gothic', sans-serif;
+            /* 한림고딕체 적용 */
+        }
+
+        .chat-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .chat-messages {
+            max-height: 70vh;
+            height: 70vh;
+            overflow-y: scroll;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: auto;
+            /* 중앙 정렬 해제 */
+            margin-bottom: 20px;
+            /* 하단 여백 추가 */
+            height: 10vh;
+        }
+
+
+        .user-input input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+
+        .user-input button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1313.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/lex_chat.js') }}"></script>
+    <script>
+        // 문서에서 Enter 키를 눌렀을 때 실행되는 함수
+        function enterkey() {
+            if (window.event.keyCode == 13) {
+                sendMessage();
+            }
+        }
+
+        var type = "{{ get_type }}";
+        var sender_name = "";
+        window.globalType = sender_name;
+        // console.log("from flask: " + type);
+
+        if (type == "0") {
+            sender_name =  "청년몰 예비 창업가";
+            sendToServer("0")
+                .then(data => {
+                    // 서버로부터 받은 응답 처리
+                    message_kind(data);
+                });
+        }
+        else if (type == "1") {
+            sender_name = "청년몰 열린 소비자";
+            sendToServer("-2")
+                .then(data => {
+                    // 서버로부터 받은 응답 처리
+                    message_kind(data);
+                });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="logo-container">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="로고" />
+            </a>
+            <a href="{{ url_for('index') }}">드림하이</a>
+        </div>
+        <div class="menu-container">
+            <a href="{{ url_for('chat') }}" style="font-weight: bold;">천안 청년몰 챗봇</a>
+            <a href="{{ url_for('review') }}">리뷰 분석</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        천안 청년몰 챗봇
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- 채팅 메시지가 표시될 영역 -->
+                        <div id="chatlog"></div>
+                    </div>
+                    <div class="user-input">
+                        <input type="text" id="userInput" class="form-control" placeholder="메시지를 입력하세요..."
+                            onkeyup="enterkey()" />
+                        <button onclick="sendMessage()" class="btn btn-primary">전송</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

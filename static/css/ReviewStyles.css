@@ -1,0 +1,103 @@
+/* 폰트 경로를 맞게 수정해주세요 */
+@font-face {
+  font-family: 'HGR';
+  src: url('../fonts/HallymGothic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 헤더 전체 영역 */
+header {
+  width: 100%;
+  height: 80px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 상단로고 영역 */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 100px;
+  height: 100px;
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 카테고리영역 */
+.menu-container {
+  justify-content: space-between;
+  padding-right: 200px;
+}
+
+.menu-container a {
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+/* 리뷰 감정분석 결과 영역 */
+.review-container {
+  font-family: 'HGR', sans-serif; /* 폰트 적용 */
+  text-align: center;
+}
+
+/* 리뷰 워드 클라우드 */
+.word {
+  padding: 100px 0px 50px 0px;
+}
+
+.word img {
+  padding: 0px 10px;
+}
+
+/* 리뷰 감정 분석 결과 시각화 */
+.visualization {
+  padding: 50px 0px;
+}
+
+.visualazation img {
+  padding: 0px 10px;
+}
+
+/* 감정 분석 결과 분포 */
+.histogram {
+  padding: 50px 0px;
+}
+
+.histogram img {
+  padding: 0px 10px;
+}
+
+/* 긍정/부정 리뷰 비율 */
+.ratio {
+  padding: 50px 0px;
+}
+
+.ratio img {
+  padding: 0px 10px;
+}
+
+/* 아이템별 감정 분석 결과 */
+.item {
+  padding: 50px 0px;
+}
+
+.item img {
+  padding: 0px 10px;
+}
