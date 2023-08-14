@@ -104,4 +104,4 @@ def coupang(items, url):
 
 
 
-# crawl_items_main("")
+# crawl_items_main("https://store.coupang.com/vp/vendors/A00662744/products?vendorName=%EB%8F%84%EA%B9%A8%EB%B9%84%EB%A7%A4&productId=6442589481&outboundShippingPlaceId=10564502")

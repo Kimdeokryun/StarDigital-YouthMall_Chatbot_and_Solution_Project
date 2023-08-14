@@ -22,7 +22,7 @@ def process_nan(value):
     return value if pd.notnull(value) else ""
 
 
-# 엑셀 데이터를 데이터베이스에 입력하는 함수
+# 엑셀 파일 데이터 값을 데이터베이스에 입력하는 함수
 def insert_data(row):
     insert_response_query = "INSERT INTO response (_id, information, button, image) VALUES (%s, %s, %s, %s)"
     response_id = int(row[0])
@@ -37,7 +37,7 @@ def insert_data(row):
         cursor.execute(insert_mall_query, (response_id, process_nan(row[5]), process_nan(row[6])))
 
 
-# 엑셀 데이터를 순회하며 데이터베이스에 입력
+# 엑셀 데이터를 반복하여 데이터베이스에 입력
 for _, row in df.iterrows():
     insert_data(row)
 

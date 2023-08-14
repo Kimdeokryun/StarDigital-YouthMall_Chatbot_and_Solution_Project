@@ -24,7 +24,7 @@ conn = mysql.connect(**db_config)
 cursor = conn.cursor()
 
 
-# 엑셀 데이터를 데이터베이스에 업데이트 또는 삽입하는 함수
+# 수정하고자 하는 엑셀 파일 데이터를 데이터베이스에 업데이트 또는 삽입하는 함수
 def upsert_data(row):
     response_id = row[0]
     select_query = "SELECT _id FROM response WHERE _id = %s"

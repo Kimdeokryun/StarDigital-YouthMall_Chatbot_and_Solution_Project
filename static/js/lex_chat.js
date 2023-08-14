@@ -143,7 +143,7 @@ function message_kind(data) {
     
 }
 
-// 챗봇의 응답을 Flask 서버로 보내는 함수
+// 챗봇의 응답을 Flask 서버로 보내는 함수    db 연동을 통해 넘버링과 일치한 db 값의 찾기
 function sendToServer(botMessage) {
     // console.log(botMessage);
 
@@ -157,7 +157,7 @@ function sendToServer(botMessage) {
         .then(response => response.json());
 }
 
-// 챗봇의 응답을 Flask 서버로 보내는 함수
+// 챗봇의 응답을 Flask 서버로 보내는 함수    업체의 아이템 찾기
 function sendToServer_item(botMessage) {
     // console.log(botMessage);
 
@@ -171,7 +171,7 @@ function sendToServer_item(botMessage) {
         .then(response => response.json());
 }
 
-// 챗봇의 응답을 Flask 서버로 보내는 함수
+// 챗봇의 응답을 Flask 서버로 보내는 함수  업체의 쇼핑몰 찾기
 function sendToServer_mall() {
     return fetch('/api/search_mall', {
         method: 'POST',

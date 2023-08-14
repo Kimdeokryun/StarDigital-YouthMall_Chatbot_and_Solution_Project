@@ -16,7 +16,7 @@ def connect_and_query():
 
     return conn, cursor
 
-# 넘버링 id에 따른 정보 찾기
+# 넘버링 id 값에 따른 정보 찾기
 def search_chat_information(bot_message):
     conn, cursor = connect_and_query()
 
@@ -85,7 +85,7 @@ def search_other_item(item_id):
         }
     }
 
-
+# 다음 번호 업체명 찾기
 def search_mall():
     conn, cursor = connect_and_query()
 
@@ -96,7 +96,7 @@ def search_mall():
 
     print(mall_data)
 
-    # 결과를 " | "로 구분하여 출력
+    # 결과를 " | "로 구분하여 출력 (버튼형을 위함)
     mall_names = " | ".join([name[0] for name in mall_data])
     print(mall_names)
 
