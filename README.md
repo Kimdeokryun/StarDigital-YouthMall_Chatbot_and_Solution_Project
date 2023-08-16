@@ -43,6 +43,24 @@
 <br>
 <br>
 
+### 카피페이지 구성
+![카피페이지](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/f20494cc-10f0-46ba-8543-a3949f4fe6a6)
+![카피페이지2](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/992a2569-6032-4429-906c-b9e42357a48f)
+
+
+### 챗봇 페이지
+![챗봇페이지](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/83495bc3-6535-434a-92f0-b7dd56ce1052)
+![챗봇페이지2](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/84e4da8e-306c-4533-8561-13790d132a51)
+![챗봇페이지3](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/b8717355-8aaa-4832-a39f-3c95b6faff27)
+
+
+### 리뷰 분석 페이지
+![리뷰 분석 페이지](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/979a884b-71a1-4a34-b0e1-778f1a342bc9)
+![리뷰 분석 페이지2](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/25b024e3-7e13-477f-a5c7-f67ff6bbf42c)
+![리뷰 분석 페이지3](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/f3278fbf-dd20-4646-827a-48734a819eca)
+
+
+
 ### 챗봇 플로우 유도 간략도
 
 ![챗봇 플로우 유도](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/7a9e40b2-d588-4763-ae92-a572dd2e2d93)
