@@ -3,7 +3,17 @@
 
 ## 프로젝트 개요
 
-이 프로젝트는 천안 청년몰의 공실 문제를 해결하고 아이템 홍보를 위한 챗봇 및 솔루션을 개발하는 것을 목표로 합니다. 
+천안 청년몰의 공실 안내와 아이템 홍보에 대한 문제점을 온라인 정보의 부재 및 천안 청년몰의 홍보를 위한 추가 인력 구성의 어려움으로 파악하였습니다. 
+챗봇과의 채팅을 위한 페이지를 구성하고 기존 천안 청년몰의 홈페이지의 카피페이지에 연동하여 공실 정보 및 청년몰의 온라인 홍보를 통해 문제를 해결하고 기존 판매중인 상품의 리뷰 분석을 통해 상품 개선 및 확장의 판단에 어시스트를 위해 텍스트 기반 긍부정도 분석 AI를 통해 솔루션을 제공합니다.
+
+## 개발 사항
+Flask, MySQL, AWS Lex를 이용한 챗봇 기능 및 api 구현
+
+AWS 서비스를 이용하여 서버, DB, 챗봇 구현
+
+챗봇의 답변 형태의 제한을 극복하고자 정보의 삽입 및 수정의 용이성을 위한 DB 설계
+
+아이템의 리뷰 분석을 위한 네이버 스마트 스토어 리뷰 크롤링
 
 ## 주요 기능
 
@@ -39,9 +49,40 @@
 - DB 데이터 입력 및 수정은 엑셀파일 업로드 자동화 
 - 버튼 기능을 통한 사용자의 챗봇 사용 플로우 유도
 
+
+## 프로젝트 설명
+
+### 프로세스
+![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/99b63d0b-d539-46b5-8e74-d1e4be765600)
+
+### WBS
+![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/e75ca6d1-e944-4c94-a7ec-8b1de09def9b)
+
+### ERD
+![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/592a1787-ce0d-41f7-ac03-e640a886b7ed)
+
+### 챗봇 플로우 유도 간략도
+
+![챗봇 플로우 유도](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/7a9e40b2-d588-4763-ae92-a572dd2e2d93)
+
+### 기존 홈페이지 카피 페이지 제작 및 연동
+기존 홈페이지에 새로운 서비스를 연동하여 접근성을 높이고자 하였습니다.
+![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/bbcf25c0-1269-4cd5-a553-1657a63868e8)
+
+### 메인 챗봇 페이지
+챗봇의 한정된 텍스트 기반 발화를 개선하고자 AWS Lex는 의도를 파악하기 위한 용도로 사용하고 DB를 구축하여, 버튼형, 이미지형 발화 기능도 추가하였습니다.
+![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/51574278-906f-4e58-8489-052fa2ac083b)
+
+### 리뷰 분석 대시보드 페이지
+네이버 스마트 스토어, 아이디어스, 쿠팡의 쇼핑몰 주소 입력을 통해 리뷰를 크롤링하고 해당 리뷰를 분석하여 보여주는 예시 페이지 입니다.
+![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/623d246d-6819-4399-b20a-134e04affde6)
+
+
+
 <br>
 <br>
 <br>
+## 추가 이미지
 
 ### 카피페이지 구성
 ![카피페이지](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/f20494cc-10f0-46ba-8543-a3949f4fe6a6)
@@ -58,13 +99,3 @@
 ![리뷰 분석 페이지](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/979a884b-71a1-4a34-b0e1-778f1a342bc9)
 ![리뷰 분석 페이지2](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/25b024e3-7e13-477f-a5c7-f67ff6bbf42c)
 ![리뷰 분석 페이지3](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/f3278fbf-dd20-4646-827a-48734a819eca)
-
-
-
-### 챗봇 플로우 유도 간략도
-
-![챗봇 플로우 유도](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/7a9e40b2-d588-4763-ae92-a572dd2e2d93)
-
-### DB 구성
-
-![드림하이](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/3b8ee398-5891-49d7-bfe4-817a2d735901)
