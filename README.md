@@ -67,11 +67,12 @@ AWS 서비스를 이용하여 서버, DB, 챗봇 구현
 
 ### 기존 홈페이지 카피 페이지 제작 및 연동
 기존 홈페이지에 새로운 서비스를 연동하여 접근성을 높이고자 하였습니다.
-![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/bbcf25c0-1269-4cd5-a553-1657a63868e8)
+![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/4d215ac0-4fd5-49ac-bc37-8e84c1ca5cf1)
 
 ### 메인 챗봇 페이지
 챗봇의 한정된 텍스트 기반 발화를 개선하고자 AWS Lex는 의도를 파악하기 위한 용도로 사용하고 DB를 구축하여, 버튼형, 이미지형 발화 기능도 추가하였습니다.
-![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/51574278-906f-4e58-8489-052fa2ac083b)
+![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/a59ffbb0-3b8f-4b4f-873c-3fe52809d27d)
+
 
 ### 리뷰 분석 대시보드 페이지
 네이버 스마트 스토어, 아이디어스, 쿠팡의 쇼핑몰 주소 입력을 통해 리뷰를 크롤링하고 해당 리뷰를 분석하여 보여주는 예시 페이지 입니다.
