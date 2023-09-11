@@ -77,27 +77,3 @@ AWS 서비스를 이용하여 서버, DB, 챗봇 구현
 ### 리뷰 분석 대시보드 페이지
 네이버 스마트 스토어, 아이디어스, 쿠팡의 쇼핑몰 주소 입력을 통해 리뷰를 크롤링하고 해당 리뷰를 분석하여 보여주는 예시 페이지 입니다.
 ![image](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/623d246d-6819-4399-b20a-134e04affde6)
-
-
-
-<br>
-<br>
-<br>
-
-## 추가 이미지
-
-### 카피페이지 구성
-![카피페이지](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/f20494cc-10f0-46ba-8543-a3949f4fe6a6)
-![카피페이지2](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/992a2569-6032-4429-906c-b9e42357a48f)
-
-
-### 챗봇 페이지
-![챗봇페이지](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/83495bc3-6535-434a-92f0-b7dd56ce1052)
-![챗봇페이지2](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/84e4da8e-306c-4533-8561-13790d132a51)
-![챗봇페이지3](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/b8717355-8aaa-4832-a39f-3c95b6faff27)
-
-
-### 리뷰 분석 페이지
-![리뷰 분석 페이지](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/979a884b-71a1-4a34-b0e1-778f1a342bc9)
-![리뷰 분석 페이지2](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/25b024e3-7e13-477f-a5c7-f67ff6bbf42c)
-![리뷰 분석 페이지3](https://github.com/Kimdeokryun/StarDigital-YouthMall_Chatbot_and_Solution_Project/assets/96904134/f3278fbf-dd20-4646-827a-48734a819eca)
